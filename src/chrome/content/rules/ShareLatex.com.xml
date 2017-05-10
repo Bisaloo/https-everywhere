@@ -1,0 +1,44 @@
+<!--
+	Time out:
+		sharelatex.com
+		ctan.sharelatex.com
+		learn.sharelatex.com
+		help.sharelatex.com
+
+	Invalid certificate:
+		scribtex.sharelatex.com
+
+-->
+<ruleset name="ShareLatex.com">
+
+	<target host="sharelatex.com" />
+	<target host="www.sharelatex.com" />
+	<target host="cdn.sharelatex.com" />
+		<test url="http://cdn.sharelatex.com/minjs/ide.js" />
+	<target host="sixpack.sharelatex.com" />
+
+	<target host="cn.sharelatex.com" />
+	<target host="cs.sharelatex.com" />
+	<target host="da.sharelatex.com" />
+	<target host="de.sharelatex.com" />
+	<target host="en.sharelatex.com" />
+	<target host="es.sharelatex.com" />
+	<target host="fr.sharelatex.com" />
+	<target host="it.sharelatex.com" />
+	<target host="ja.sharelatex.com" />
+	<target host="ko.sharelatex.com" />
+	<target host="lb.sharelatex.com" />
+	<target host="nl.sharelatex.com" />
+	<target host="no.sharelatex.com" />
+	<target host="pt.sharelatex.com" />
+	<target host="ru.sharelatex.com" />
+	<target host="sv.sharelatex.com" />
+	<target host="tr.sharelatex.com" />
+
+	<rule from="^http://sharelatex\.com/"
+		to="https://www.sharelatex.com/" />
+
+	<rule from="^http:"
+		to="https:" />
+
+</ruleset>
