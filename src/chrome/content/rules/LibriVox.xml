@@ -1,24 +1,12 @@
 <!--
-	Nonfunctional subdomains:
-
-		- wiki *
-
-	* Shows forum
-
-
-	Mixed content:
-
-		- Images on (www.) from ^ *
-
-	* Secured by us
+	Invalid certificate:
+		www.librivox.org
 
 -->
 <ruleset name="LibriVox (partial)">
 
 	<target host="librivox.org" />
 	<target host="forum.librivox.org" />
-	<target host="www.librivox.org" />
-
-	<rule from="^http:" to="https:" />
+	<target host="wiki.librivox.org" />
 
 </ruleset>
