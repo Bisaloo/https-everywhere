@@ -1,22 +1,23 @@
 <!--
-	Insecure cookies are set for these hosts:
+	Different content http/https:
+		annotationhub.bioconductor.org
 
-		- support.bioconductor.org
+	Invalid certificate:
+		bioc2018.bioconductor.org
+
+	http://docbuilder.bioconductor.org:8080 listens to non-standard port
 
 -->
 <ruleset name="Bioconductor.org">
 
 	<target host="bioconductor.org" />
-	<target host="support.bioconductor.org" />
 	<target host="www.bioconductor.org" />
+	<target host="git.bioconductor.org" />
+	<target host="issues.bioconductor.org" />
+	<target host="master.bioconductor.org" />
+	<target host="support.bioconductor.org" />
 
-
-	<!--	Not secured by server:
-					-->
-	<!--securecookie host="^support\.bioconductor\.org$" name="^biostar2$" /-->
-
-	<securecookie host="^\w" name=".+" />
-
+	<securecookie host=".+" name=".+" />
 
 	<rule from="^http:"
 		to="https:" />
