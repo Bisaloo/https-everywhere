@@ -6,7 +6,8 @@
 
 	<target host="gsu.edu" />
 	<target host="www.gsu.edu" />
-
+		<!-- Example page with MCB -->
+		<test url="http://www.gsu.edu/about/" />
 
 	<securecookie host="^www\.gsu\.edu$" name=".+" />
 
